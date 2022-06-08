@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container bg-light mt-4">
+        <form class="row">
+            <div class="col-6 mb-2">
+                <label for="nombre" class="mb-1">Nombre de Pila</label>
+                <input type="text" id="nombre" class="form-control">
+            </div>
+            <div class="col-6 mb-2">
+                <label for="apellido" class="mb-1">Apellido</label>
+                <input type="text" id="apellido" class="form-control">
+            </div>
+            <div class="col-12 mb-2">
+                <label for="usuario" class="mb-1">Nombre de Usuario</label>
+                <div class="input-group">
+                    <span class="input-group-text " id="arroba">@</span>
+                    <input type="text" id="usuario" class="form-control" placeholder="Nombre de Usuario" aria-describedby="arroba">
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <label for="email">Correo Electronico <span class="form-text fs-6">(opcional)</span></label>
+                <input type="email" id="email" class="form-control" placeholder="you@example.com">
+            </div>
+            <div class="col-12 mb-2">
+                <label for="direccion">Habla a</label>
+                <input type="text" id="direccion" class="form-control" placeholder="1234 Main St">
+            </div>
+            <div class="col-12 mb-2">
+                <label for="direccion-2">Direccion 2 <span class="form-text fs-6">(opcional)</span></label>
+                <input type="text" id="direccion-2" class="form-control" placeholder="Apartamento o suite">
+            </div>
+            <div class="col-5 mb-2">
+                <label for="pais" class="form-label">Pais</label>
+                <select id="pais" class="form-select">
+                    <option>Escoger...</option>
+                </select>
+            </div>
+            <div class="col-4 mb-2">
+                <label for="estado" class="form-label">Estado</label>
+                <select id="estado" class="form-select">
+                    <option>Escoger...</option>
+                </select>
+            </div>
+            <div class="col-3 mb-2">
+                <label for="cod-postal" class="form-label">Codigo Postal</label>
+                <input type="text" id="cod-postal" class="form-control">
+            </div>
+            <hr class="dropdown-divider mb-4">
+            <div class="col-12 mb-2 fs-6">
+                <input type="checkbox" class="form-check-input" id="checkbox-1">
+                <label for="checkbox-1" class="form-check-label ms-1">La direccion de envio es la misma que mi direccion de facturacion</label>
+            </div>
+            <div class="col-12 mb-3 fs-6">
+                <input type="checkbox" class="form-check-input" id="checkbox-2">
+                <label for="checkbox-2" class="form-check-label ms-1">Guarde esta informacion para la proxima vez</label>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
